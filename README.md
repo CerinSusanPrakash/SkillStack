@@ -1,2 +1,0 @@
-# SkillStack
-Skill tracker
