@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -46,16 +47,21 @@ const Home = () => {
         />
       </section>
 
-      <section style={{ textAlign: 'center', marginTop: '4rem' }}>
+      <section style={{ textAlign: 'center', marginTop: '4rem' ,background: '#f5e3caff',
+        borderRadius: 12,
+        padding: '1.5rem',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+        textAlign: 'center',}}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Get Started</h2>
-        <p style={{ fontSize: '1.1rem', color: '#777', maxWidth: 600, margin: 'auto' }}>
+        <p style={{ fontSize: '1.1rem', color: '#000000ff', maxWidth: 600, margin: 'auto' }}>
           Start adding your learning goals and track your journey to skill mastery effortlessly.
         </p>
-        <button 
-          style={{ marginTop: '1.5rem', padding: '0.75rem 2rem', fontSize: '1.1rem', borderRadius: 6, border: 'none', backgroundColor: '#0078D7', color: 'white', cursor: 'pointer' }}
-          onClick={() => alert("Navigate to Add Skill Form")}
+        <button   color="inherit"
+          style={{ marginTop: '1.5rem', padding: '0.75rem 2rem', fontSize: '1.1rem', borderRadius: 6, border: 'none', backgroundColor: '#2064a9ff', color: 'white', cursor: 'pointer' }}
         >
+            <Link to={'/signup'} style={{textDecoration:"none" ,color:'inherit'}}>
           Add Your First Skill
+          </Link>
         </button>
       </section>
     </div>
